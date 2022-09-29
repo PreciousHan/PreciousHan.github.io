@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盲盒go-购物车</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="盲盒go-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，满足各种购物需求。">
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上购物,网上商城,若来,泡泡玛特,迪士尼,漫威,海贼王,盲盒,盲盒go">
+    <!-- 引入网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入基础的css样式消除浏览器原有样式 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.css">
+    <!-- 引入shopcart.css -->
+    <link rel="stylesheet" href="css/shopcart.css">
+    <!-- 引入jQuery.js -->
+    <script src="js/jQuery.min.js"></script>
+    <!-- 引入shopcart.js -->
+    <script src="js/shopcart.js"></script>
+</head>
+
+<body>
+    <!-- shortcut快捷导航模块 start-->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>盲盒go欢迎您!&nbsp;</li>
+                    <li>
+                        <a href="#">请登录</a>&nbsp;<a href="#" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="#">我的喜欢</a> </li>
+                    <li></li>
+                    <li><a href="#">盲盒go会员</a></li>
+                    <li></li>
+                    <li><a href="#">品牌介绍</a></li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="#">盲盒分类</a> </li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="#">客户服务</a> </li>
+                    <li></li>
+                    <li class="arrow-icon"><a href="#">网站导航</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut快捷导航模块 end-->
+    <!-- header头部模块制作 start-->
+    <header class="header w">
+        <!-- logo模块 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="盲盒go">盲盒go</a>
+            </h1>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="">
+            <button>搜索</button>
+        </div>
+    </header>
+    <!-- header头部模块制作 end-->
+    <!-- 购物车模块制作start -->
+    <div class="w">
+        <div class="cart-filter-bar">
+            <em>全部商品</em>
+        </div>
+        <!-- 购物车主要核心区域 -->
+        <div class="cart-wrap">
+            <!-- 头部全选模块 -->
+            <div class="cart-thead clearfix">
+                <div class="t-checkbox fl">
+                    <input type="checkbox" name="" id="" class="checkall"> 全选
+                </div>
+                <div class="t-goods fl">商品</div>
+                <div class="t-price fl">单价</div>
+                <div class="t-num fl">数量</div>
+                <div class="t-sum fl">小计</div>
+                <div class="t-action fl">操作</div>
+            </div>
+            <!-- 商品详情模块 -->
+            <div class="cart-item-list">
+                <div class="cart-item">
+                    <div class="p-checkbox">
+                        <input type="checkbox" name="" id="" class="j-checkbox" >
+                    </div>
+                    <div class="item-form">
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/big.jpg" alt="" style="width:130px;height:130px">
+                            </div>
+                            <div class="p-msg">
+                                POP MART泡泡玛特【七夕礼物】 时光百宝箱499福袋抽盲盒整盒和手办潮流玩具桌面摆件生日礼物 499福袋
+                            </div>
+                        </div>
+                        <div class="p-price">￥499.00</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" name="" id="" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">
+                            <strong>￥499.00</strong>
+                        </div>
+                        <div class="p-ops">
+                            <a href="javascript:;">删除</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-item ">
+                    <div class="p-checkbox">
+                        <input type="checkbox" name="" id="" class="j-checkbox">
+                    </div>
+                    <div class="item-form">
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/big.jpg" alt="" style="width:130px;height:130px">
+                            </div>
+                            <div class="p-msg">
+                                POP MART泡泡玛特【七夕礼物】 时光百宝箱499福袋抽盲盒整盒和手办潮流玩具桌面摆件生日礼物 499福袋
+                            </div>
+                        </div>
+                        <div class="p-price">￥499.00</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" name="" id="" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">
+                            <strong>￥499.00</strong>
+                        </div>
+                        <div class="p-ops">
+                            <a href="javascript:;">删除</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-item ">
+                    <div class="p-checkbox">
+                        <input type="checkbox" name="" id="" class="j-checkbox">
+                    </div>
+                    <div class="item-form">
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/big.jpg" alt="" style="width:130px;height:130px">
+                            </div>
+                            <div class="p-msg">
+                                POP MART泡泡玛特【七夕礼物】 时光百宝箱499福袋抽盲盒整盒和手办潮流玩具桌面摆件生日礼物 499福袋
+                            </div>
+                        </div>
+                        <div class="p-price">￥499.00</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" name="" id="" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">
+                            <strong>￥499.00</strong>
+                        </div>
+                        <div class="p-ops">
+                            <a href="javascript:;">删除</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 结算模块 -->
+        <div class="cart-floatbar ">
+            <div class="select-all">
+                <input type="checkbox" name="" id="" class="checkall">   全选
+            </div>
+            <div class="operation">
+                <a href="javascript:;" class="remove-batch">删除选中的商品</a>
+                <a href="javascript:;" class="clear-all">清除购物车</a>
+            </div>
+            <div class="toolbar-right">
+                <div class="amount-sum">已选择<em>3</em>件商品  <i class="fa fa-angle-up"></i></div>
+                <div class="price-sum">总价：<em>￥1479.00</em> <b></b></div>
+                <div class="btn-area">去结算</div>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车模块制作end -->
+      <!-- 底部模块制作 start -->
+      <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <h5 class="logo1"></h5>
+                        <div class="service_txt">
+                            <h4>正品保障</h4>
+                            <p>正品保障,提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="logo2"></h5>
+                        <div class="service_txt">
+                            <h4>极速物流</h4>
+                            <p>急速物流,急速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="logo3"></h5>
+                        <div class="service_txt">
+                            <h4>无忧售后</h4>
+                            <p>7天无理由退货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="logo4"></h5>
+                        <div class="service_txt">
+                            <h4>帮助中心</h4>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>会员介绍</dd>
+                    <dd>团购福利</dd>
+                    <dd>常见问题</dd>
+                    <dd>大福袋</dd>
+                    <dd>联系客服</dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd>上门自提</dd>
+                    <dd>送货到家</dd>
+                    <dd>配送服务查询</dd>
+                    <dd>配送费收取标准</dd>
+                    <dd>海外配送</dd>
+
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>货到付款</dd>
+                    <dd>微信支付</dd>
+                    <dd>支付宝支付</dd>
+                    <dd>分期付款</dd>
+                    <dd>公司转账</dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>售后政策</dd>
+                    <dd>价格保护</dd>
+                    <dd>退款说明</dd>
+                    <dd>返修/退换货</dd>
+                    <dd>取消订单</dd>
+                </dl>
+                <dl>
+                    <dt>特色社区</dt>
+                    <dd>社区交流</dd>
+                    <dd>盲盒展示</dd>
+                    <dd>盲盒go会员</dd>
+                    <dd>社区交易</dd>
+                    <dd>盲盒成就</dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><img src="images/qrcode.png" alt=""></dd>
+                    <dd>盲盒go客户端</dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    关于我们 <span>| </span>联系我们<span>| </span>联系客服<span>| </span>商家入驻 <span>| </span>营销中心 <span>| </span>
+                    盲盒go手机版 <span>| </span> 友情链接 <span>| </span> 销售联盟 <span>| </span> 盲盒go社区 <span>| </span> 盲盒go公益
+                    <span>| </span> English Site <span>| </span> Contact U
+                </div>
+                <div class="copyright">
+                    地址: 北京市朝阳区望京东园四区 13号楼 -4 至 33 层 101 内 A 座 36 层 3606 室 邮编:100096 邮箱 4000232233@POPMART.COM<br>
+                    COPYRIGHT © 泡泡玛特 POPMART.COM ALL RIGHTS RESERVED 京ICP备11028233号-3
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块制作 end -->
+</body>
+
+</html>

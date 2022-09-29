@@ -1,0 +1,661 @@
+/* crumb_wrap面包屑导航start */
+.crumb_wrap {
+    height: 40px;
+    line-height: 40px;
+    background: #f3f3f3;
+    margin: 0px 0 10px;
+}
+
+.crumb_wrap a {
+    margin-right: 10px;
+}
+
+/* crumb_wrap面包屑导航end */
+/* preview_wrap预览模块start */
+.preview_wrap {
+    width: 350px;
+    height: 590px;
+}
+
+.preview_img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.preview_img img {
+    width: 350px;
+    height: 350px;
+}
+
+.mask {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fede4f;
+    border: 1px solid #ccc;
+    cursor: move;
+    opacity: .5;
+}
+
+.big {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 352px;
+    width: 500px;
+    height: 500px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.bigImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.preview_list {
+    position: relative;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.list_item {
+    width: 280px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.list_item li {
+    float: left;
+    width: 52px;
+    height: 52px;
+    margin: 0 2px;
+}
+
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    width: 22px;
+    height: 32px;
+    top: 50%;
+    margin-top: -16px;
+}
+
+.arrow_prev {
+    left: 0;
+    background: url(../images/xq-prev.png);
+}
+
+.arrow_next {
+    right: 0;
+    background: url(../images/xq-next.png);
+}
+
+.list_item li img {
+    border: 2px solid transparent;
+}
+
+.list_item .current {
+    border: 2px solid #e53e41;
+}
+
+.list_item li:hover img {
+    border: 2px solid #e53e41;
+}
+
+.preview_info {
+    height: 20px;
+}
+
+.let_btns {
+    float: left;
+}
+
+.let_btns a {
+    color: #666;
+    text-decoration: none;
+}
+
+.right_btns {
+    float: right;
+}
+
+/* preview_wrap预览模块end */
+/* itemInfo_wrap产品详情模块start */
+.itemInfo_wrap {
+    width: 590px;
+    margin-left: 30px;
+}
+
+.sku_name {
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sku_name em {
+    padding: 1px;
+    line-height: 14px;
+    font-family: arial, simsun;
+    color: #fff;
+    background: #e4393c;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.news {
+    height: 32px;
+    color: #e12228;
+    font-size: 14px;
+}
+
+.summary dl {
+    overflow: hidden;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+}
+
+.summary dt {
+    line-height: 36px;
+    width: 60px;
+    padding-left: 10px;
+}
+
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background-color: #f3f3f3;
+}
+
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.remark {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+}
+
+.summary_support dd {
+    line-height: 36px;
+}
+
+.border {
+    height: 1px;
+    background-color: #666;
+    margin-bottom: 10px;
+}
+
+.summary_dispatch dd {
+    line-height: 36px;
+}
+
+.choose dt {
+    margin-right: 15px;
+}
+
+.choose a {
+    line-height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    display: inline-block;
+    height: 39px;
+    margin-right: 10px;
+}
+
+.choose a:hover {
+    border-color: #c81623;
+}
+
+.choose_btns {
+    margin-top: 20px;
+}
+
+.choose_amount {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+    background-color: #bfa;
+}
+
+.choose_amount input {
+    width: 34px;
+    height: 46px;
+    border: 1px solid #ccc;
+    border-right: transparent;
+    text-align: center;
+}
+
+.add,
+.reduce {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 23px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 23px;
+
+}
+
+.add {
+    top: 0;
+    border-bottom: transparent;
+}
+
+.reduce {
+    bottom: 0;
+    cursor: not-allowed;
+}
+
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.addcar:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* product_detail产品细节模块start */
+.aside {
+    width: 210px;
+}
+
+.pop_box .dt {
+    position: relative;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+
+.pop_box .dt h3 {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.contact {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+}
+
+.btns {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.btns a {
+    display: inline-block;
+    width: 88px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    margin: 0 8px 0 5px;
+    font-size: 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    color: #666;
+}
+
+.pop_box .dt a {
+    display: inline-block;
+}
+
+.category {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.category .dt {
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.category .dt h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pop_list dt {
+    position: relative;
+}
+
+.pop_list s {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/more.png);
+    background-position: -4px -4px;
+    cursor: pointer;
+}
+
+.pop_list dt a {
+    padding-left: 36px;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+}
+
+.pop_list dl dd {
+    display: none;
+}
+
+.ETab {
+    border: 1px solid #eee;
+    border-top: none;
+    /* overflow的默认值，就是该值规定内容不被隐藏，即它可以在块框之外也可以看见。 */
+    overflow: visible;
+    height: 550px;
+}
+
+.ETab .tab_main {
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #e4393c;
+    display: block;
+
+}
+
+.tab_main li {
+    padding: 10px 23px 10px 22px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab_main li.current {
+    background-color: #e4393c;
+    color: #fff;
+    cursor: default;
+}
+
+.ETab .tab_con {
+    padding: 10px 0;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+/* pop_list1模块start */
+.ETab .tab_con .pop_list1,
+.ETab .tab_con .pop_list2 {
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+}
+
+.pop_list1 li,
+.pop_list2 li {
+    padding: 10px 15px;
+}
+
+.p_info {
+    position: relative;
+    line-height: 20px;
+    margin-top: 3px;
+}
+
+.p_info .p_count {
+    margin-left: 12px;
+    color: #999;
+}
+
+.p_info strong {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    color: #e4393c;
+    font-size: 14px;
+    font-family: Verdana;
+}
+
+.p_info .p_num {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #e4393c;
+    color: #fff;
+    text-align: center;
+}
+
+/* pop_list1模块end */
+/* pop_list2模块start */
+
+.pop_list2 .p_info {
+    height: 22px;
+    line-height: 22px;
+}
+
+.pop_list2 .p_info strong {
+    position: absolute;
+    top: 0;
+    right: -17px;
+    color: #e4393c;
+    font-size: 14px;
+    font-family: Verdana;
+}
+
+.pop_list2 li {
+    position: relative;
+}
+
+.pop_list2 .p_name {
+    position: absolute;
+    width: 160px;
+    height: 36px;
+    left: 50%;
+    margin-left: -80px;
+    padding: 0 10px;
+    filter: none;
+    overflow: hidden;
+    top: 134px;
+    left: 95px;
+    background: rgba(0, 0, 0, .7);
+}
+
+.p_name a {
+    color: #fff;
+}
+
+.pop_list2 .p_info .p_num {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #e4393c;
+    color: #fff;
+    text-align: center;
+}
+
+/* pop_list2模块end */
+.detail {
+    width: 978px;
+    height: 3015px;
+}
+
+.detail .tab_main {
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #e4393c;
+
+}
+
+.tab_main ul {
+    margin-top: -1px;
+}
+
+.tab_main li {
+    padding: 10px 23px 10px 22px;
+    font-size: 14px;
+    display: inline-block;
+    font-family: "microsoft yahei";
+}
+
+.detail .tab_con {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.tab_con .p_box{
+    display: none;
+}
+.tab_con .p_parameter {
+    padding: 0 10px 10px;
+    margin-bottom: 20px;
+
+}
+
+.p_parameter ul {
+    padding: 20px 0 15px;
+}
+
+.p_parameter ul li {
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 42px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.p_parameter2 {
+    padding: 20px 0 15px;
+}
+
+.p_parameter .p_parameter2 li {
+    width: 240px;
+}
+
+.shop_car {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    height: 23px;
+    line-height: 23px;
+    padding: 1px 1px 0;
+    cursor: pointer;
+}
+
+.shop_car a {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 16px;
+    background-color: #df3033;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* product_detail产品细节模块end */
+/* itemInfo_wrap产品详情模块end */
+/* extra-trigger猜你喜欢模块start */
+.extra_trigger {
+    width: 210px;
+    height: 644px;
+    margin-left: 20px;
+}
+
+.track_tit {
+    line-height: 50px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+}
+
+.track_tit h3 {
+    display: inline-block;
+    background: #fff;
+    padding: 0 25px;
+}
+
+.track_con {
+    margin: 0 auto;
+    width: 150px;
+    height: 580px;
+    overflow: hidden;
+}
+
+.track_con ul {
+    width: 150px;
+    height: 2820px;
+}
+
+.track_con div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 12px;
+    background: rgba(255, 255, 255, .9);
+    padding: 6px;
+}
+
+.track_con .xq_p {
+    line-height: 18px;
+    color: #c81623;
+    text-align: center;
+}
+
+/* extra-trigger猜你喜欢模块end */

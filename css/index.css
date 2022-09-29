@@ -1,0 +1,406 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin: 10px 0 10px 220px;
+}
+
+.focus {
+    width: 721px;
+    height: 455px;
+    float: left;
+    /* background-color: pink; */
+    position: relative;
+    overflow: hidden;
+}
+
+.newsflash {
+    width: 250px;
+    height: 455px;
+    float: right;
+}
+
+/* focus模块制作 */
+.focus .img-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.img-list li img {
+    width: 721px;
+    height: 455px;
+}
+
+.prev,
+.next {
+    display: none;
+    position: absolute;
+    /* 绝对定位的盒子垂直居中；绝对定位垂直居中的算法top：50%+margin-top：-盒子高度的一半 */
+    top: 50%;
+    margin-top: -30px;
+    /* a是行内块元素不能设置宽高；加了绝对定位的盒子可以直接设置高度和宽度，不用display转换了； */
+    width: 50px;
+    height: 60px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-right: 10px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 10px;
+}
+
+.promo-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -58px;
+    height: 23px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 12px;
+}
+
+.promo-nav li {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.promo-nav .selected {
+    background-color: #ff5000;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 5px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\f105';
+    font-family: 'FontAwesome';
+}
+
+.news-bd {
+    padding: 5px 15px 0;
+}
+
+.news-bd li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lifeservice ul li i {
+
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat;
+    margin-top: 12px;
+}
+
+.lifeservice ul li .hot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../images/jian.jpg) no-repeat;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.bargain img {
+    width: 250px;
+    height: 76px;
+}
+
+/* recom推荐模块制作 */
+.recom {
+    height: 163px;
+    margin-bottom: 10px;
+}
+
+.recom-hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #5c5251;
+}
+
+.recom-bd {
+    float: left;
+}
+
+.recom-bd li {
+    float: left;
+    width: 248px;
+    height: 163px;
+    position: relative;
+}
+
+.recom-bd li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.recom li:last-child {
+    width: 251px;
+}
+
+.recom-bd li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* like模块制作 */
+.like {
+    /* 版本一12个的 */
+    /* height: 555px; */
+    /* 版本二6个的 */
+    height: 305px;
+    /* background-color: #bfa; */
+}
+
+.like-hd {
+    height: 30px;
+    line-height: 30px;
+}
+
+.like-hd h3 {
+    font-size: 16px;
+}
+
+.like-hd h5 {
+    padding-right: 25px;
+    font-size: 14px;
+    color: #c6c6c6;
+}
+
+.like-hd h5::after {
+    padding-left: 8px;
+    content: '\f01e';
+    font-family: 'FontAwesome';
+    color: #c0c0c0;
+}
+
+.like-bd li {
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 250px;
+    /* background-color: pink;  */
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: #f9f9f9;
+
+}
+
+.like-bd img:hover {
+    box-shadow: rgba(0, 0, 0, .2) 0px 0px 5px 5px;
+}
+
+.like-bd li img {
+    height: 210px;
+    width: 160px;
+}
+.ppmt{
+    margin-bottom: 20px;
+}
+.ppmt .box-hd {
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.ppmt .box-hd h3 {
+    float: left;
+    font-size: 18px;
+}
+
+.tab-lists {
+    float: right;
+}
+
+.tab-lists li {
+    float: left;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.box-bd img:hover {
+    margin-left: 8px;
+}
+
+.box-bd img {
+    transition: all .2s;
+}
+
+.tab-list-item>div {
+    float: left;
+    height: 361px;
+}
+
+.col-210 {
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.col-210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 34px;
+}
+
+.col-210 ul {
+    padding-left: 12px;
+}
+
+.col-210 ul li {
+    margin-right: 10px;
+}
+
+.col-210 img {
+    width: 210px;
+    height: 259px;
+}
+
+.col-329 {
+    width: 329px;
+}
+
+.col-329 img {
+    width: 329px;
+    height: 361px;
+}
+
+.col-221 {
+    width: 221px;
+}
+
+.col-221 img {
+    width: 221px;
+    height: 180px;
+}
+
+.col-219 {
+    width: 219px;
+}
+
+.col-219 img {
+    width: 219px;
+    height: 180px;
+}
+
+/* 固定电梯导航 */
+.fixedtool {
+    width: 60px;
+    height:350px;
+    border: 1px solid #ccc;
+    position: fixed;
+    right: 30px;
+    top: 88px;
+    display: none;
+}
+
+.fixedtool ul li {
+    line-height: 19px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    background: #fff;
+}
+
+.fixedtool li a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 19px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: content-box;
+}
+.fixedtool .current a{
+    background: #c81623;
+    color: #fff;
+}
